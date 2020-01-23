@@ -11,13 +11,13 @@ constructor(props) {
 }
 
 callAPI() {
-   fetch("http://35.195.193.44:9000/testAPI")
+   fetch("http://35.195.193.44:7000/testAPI")
        .then(res => res.text())
        .then(res => this.setState({ apiResponse: res }));
 }
 
 customersAPI() {
-  fetch("http://35.195.193.44:9000/customers")
+  fetch("http://35.195.193.44:7000/customers")
       .then(res => res.json())
       .then(res => this.setState({ custRes: res}));
 }
